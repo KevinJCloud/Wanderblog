@@ -1,0 +1,17 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: mongo-storage
+  annotations:
+    storageclass.kubernetes.io/is-default-class: "false"
+provisioner: ebs.csi.aws.com        # CSI driver for AWS EBS
+parameters:
+  type: gp3                        # volume type
+  iops: "3000"                     # IOPS for gp3
+  throughput: "125"                # throughput in MB/s
+  encrypted: "true"                # enable encryption
+reclaimPolicy: Retain              # Delete or Retain
+allowVolumeExpansion: true         # allow PVC size expansion
+mountOptions:
+  - discard                        # optional mount options
+volumeBindingMode: WaitForFirstConsumer
