@@ -57,6 +57,8 @@ Argo CD	GitOps Continuous Delivery
 AWS IAM	Permissions and authentication
 eksctl	EKS cluster management
 kubectl	Kubernetes administration
+
+
 Project Structure
 
 Wanderblog/
