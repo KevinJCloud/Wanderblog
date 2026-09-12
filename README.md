@@ -58,6 +58,7 @@ AWS IAM	Permissions and authentication
 eksctl	EKS cluster management
 kubectl	Kubernetes administration
 Project Structure
+
 Wanderblog/
 │
 ├── frontend/
@@ -79,6 +80,7 @@ Wanderblog/
 ├── Jenkinsfile
 │
 └── README.md
+
 1. Prerequisites
 
 Install the following tools on the Jenkins agent or administration machine:
