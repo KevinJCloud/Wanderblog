@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: kevinjcloud/frontend:latest
+        image: kevinjcloud/wanderblog-frontend:v1
         ports:
         - containerPort: 80
         envFrom:
